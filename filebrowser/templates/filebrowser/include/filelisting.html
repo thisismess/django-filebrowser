@@ -124,7 +124,7 @@
         <!-- DATE -->
         <td><span class="small">{{ fileobject.datetime|date:"N j, Y" }}</span></td>
 
-        <td><span class="small">{{ request.get_host }}{{ fileobject.url }}</span></td>
+        <td><span class="small"><a href="http://{{ request.get_host }}{{ fileobject.url }}">http://{{ request.get_host }}{{ fileobject.url }}</a></span></td>
 
         <!-- EDIT -->
         <td>
